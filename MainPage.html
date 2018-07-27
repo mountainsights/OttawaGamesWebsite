@@ -15,11 +15,8 @@
 	
 	*{font-family: "Times New Roman", Times, serif;	}
 	
-	div.Main_Page_Title
-		{
-		
-		
-		}
+	
+	
 	
 	div.topnav
 		{
@@ -46,113 +43,172 @@
 			color: black;
 		}
 		
-	.row
-	{
-		display: flex;
-	}
+		footer 
+			{
+			text-align: center;
+			padding-top: 300px;
+			color: grey;
+			}
+			
+		.wrapper
+			{
+			width:960px;
+			margin: 0 auto;
+			}
+		form {border: 3px solid #f1f1f1;}
 
-	.column 
-	{
-		flex: 50%;
-	}
-		
-	.left
-	{
-		width: 65%;
-		margin-top:50px;
-	}
-	
-	.right
-	{
-		width: 35%;
-		margin-left: 50px;
-		margin-top:50px;
-		border: 1px solid red;
-		background: #666;
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
 
-	}
-		
-	.row:after 
-		{
-		content: "";
-		display: table;
-		clear: both;
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
 		}
-		
 
-	
-	div.body 
-		{
-		border: 1px solid red;
-		text-align: center;
-		background-color: grey;
+		button:hover {
+			opacity: 0.8;
 		}
-	
-	footer 
+
+		
+		
+		.container
 		{
-		text-align: center;
-		padding-top: 300px;
-		color: grey;
+		  display: grid;
+		 
+		  grid-template-columns: 1fr 1fr 35% 15% 1fr;
+		  grid-template-rows: 100px 80px 600px 400px 100px;
+		  grid-gap: 1rem;
 		}
 		
-	.wrapper
-		{
-		width:960px;
-		margin: 0 auto;
+		
+		.links {
+		  grid-row: 2 / 3;
+		  grid-column: 2 / 5;
 		}
+
+		.sidebar {
+		background-color: #6C52D9;
+		  grid-row: 3 / 5;
+		  grid-column: 4 / 5;
+		}
+
+		.content-1 {
+		background-color: #6C52D9;
+		  grid-row: 3 / 4;
+		  grid-column: 2 / 4;
+		}
+
+		.Ad-1 {
+		background-color: #6C52D9;
+		  grid-row: 3 /5;
+		  grid-column: 1 / 2;
+		}
+
+		.Ad-2 {
+		background-color: #6C52D9;
+		  grid-row: 3 / 5;
+		  grid-column: 5 / 6;
+		}
+
+		.Logo {
+		  grid-row: 1/2;
+		  grid-column: 2/5;
+		}
+
+		.footer {
+		background-color: #6C52D9;
+		  grid-row: 5 / 6;
+		  grid-column: 2 / 5;
+		}
+		
+		.login
+		{
+			background-color: white;
+			border: 10px solid black;
+			padding:10px;
+		}
+		
+		.promo
+		{
+			border: 10px solid grey;
+			padding: 10px;
+			text-align: center;
+			
+		}
+
+
+
 
 
 	
     
 }
-	</style>
- 
-		<h1>
-			<div class = "Main_Page_Title">	
-				<img src="Main_Page_Title.png" alt="Page title image" style = "width:40%">	<!image for main page>
-			</div>
-		
-		
-		</h1>													<!Main Page title>
+	</style>								
 
-		<div class = "topnav">									<!Links to other pages>
-			<a href = "/Coming_Soon.html">Info</a>
-			<a href = "/Coming_Soon.html">Game List</a>
-			<a href = "/Coming_Soon.html">Discord</a>
-			<a href = "/Coming_Soon.html">Careers</a>
-			<a href = "/Coming_Soon.html">IG Staff</a>
-			<a href = "/Coming_Soon.html">Store</a>
-			<a href = "/Coming_Soon.html">Contact Us</a>
-		</div>
+		
 		
 </head>
 </div>
-<div class = "wrapper">
+
 <body>
-		<div class="row">
-			
-			<div class = "left" align="center">
-				<div class = "body">
-					<p>Site for a n00bs called Matt !</p>
-				</div>
-			</div>
-			<div class = "right" align="center">
-				<h2>Dont miss this exclusive sale!</h2>
-				<p>%50 off reopening of the whole store
-					for WarRock!</p>
-			</div>
-			<div class = "right">
-				<form>
-					Username:<br>
-						<input type="text" name="username"><br>
-					Password:<br>
-						<input type="text" name="password">
-						<input type="submit" value="Submit">
-				</form>
-			</div>
-		</div>
-</body>
-</div>
+<br>
+
+	<div class="container">
+			<div class="item Logo">
 	
+				<div class = "Main_Page_Title">	
+					<img src="Main_Page_Title.png" alt="Page title image" style = "width:40%">	<!image for main page>
+				</div>
+				
+		  </div>
+		  <div class="item links">
+				<div class = "topnav">									<!Links to other pages>
+					<a href = "/Coming_Soon.html">Info</a>
+					<a href = "/Coming_Soon.html">Game List</a>
+					<a href = "/Coming_Soon.html">Discord</a>
+					<a href = "/Coming_Soon.html">Careers</a>
+					<a href = "/Coming_Soon.html">IG Staff</a>
+					<a href = "/Coming_Soon.html">Store</a>
+					<a href = "/Coming_Soon.html">Contact Us</a>
+				</div>
+		  </div>
+		  <div class="item sidebar">
+				<div class = "login">
+						<form>
+								<h2>Login</h2>
+								<b>Username:</b><br>
+								<input type = "text" placeholder="Enter Username" required>
+								<b>Password:</b><br>
+								<input type = "text" placeholder="Enter Password" required>
+								<button type="submit">Login</button>
+						</form>
+				</div>
+				<div class = "promo">
+						<h3>%50 off reopening of the whole store for WarRock!</h3>
+				</div>
+		  </div>
+		  <div class="item content-1">
+				<h1>Main text</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<p>
+		  </div>
+		  <div class="item Ad-1">Advertisement 1</div>
+		  <div class="item Ad-2">Advertisment 2</div>
+		  
+		  <div class="item footer">footer</div>
+	</div>
+
+</body>
+
 <footer> Created July 22nd 2018</footer>
 </html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class = "wrapper">
+<head>
+<title>Main page</title> 	<!Display name on tab>
+<link rel=”shortcut icon” href=”OttawaGames/favicon.ico” mce_href=”OttawaGames/favicon.ico”/>
+	<style>		
+	img 
+		{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	
+	*{font-family: "Times New Roman", Times, serif;	}
+	
+	div.Main_Page_Title
+		{
+		
+		
+		}
+	
+	div.topnav
+		{
+			overflow: hidden;
+			background-color: #333;
+			text-align: center;
+		}
+
+	
+	.topnav a 
+		{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+	
+	.topnav a:hover 
+		{
+			background-color: #ddd;
+			color: black;
+		}
+		
+	.row
+	{
+		display: flex;
+	}
+
+	.column 
+	{
+		flex: 50%;
+	}
+		
+	.left
+	{
+		width: 65%;
+		margin-top:50px;
+	}
+	
+	.right
+	{
+		width: 35%;
+		margin-left: 50px;
+		margin-top:50px;
+		border: 1px solid red;
+		background: #666;
+
+	}
+		
+	.row:after 
+		{
+		content: "";
+		display: table;
+		clear: both;
+		}
+		
+
+	
+	div.body 
+		{
+		border: 1px solid red;
+		text-align: center;
+		background-color: grey;
+		}
+	
+	footer 
+		{
+		text-align: center;
+		padding-top: 300px;
+		color: grey;
+		}
+		
+	.wrapper
+		{
+		width:960px;
+		margin: 0 auto;
+		}
+	form {border: 3px solid #f1f1f1;}
+
+	input[type=text], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	button:hover {
+		opacity: 0.8;
+	}
+
+	
+
+	.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+	}
+
+	img.avatar {
+		width: 40%;
+		border-radius: 50%;
+	}
+
+	.container {
+		padding: 16px;
+	}
+
+	span.psw {
+		float: right;
+		padding-top: 16px;
+	}
+
+	/* Change styles for span and cancel button on extra small screens */
+	@media screen and (max-width: 300px) {
+		span.psw {
+		   display: block;
+		   float: none;
+		}
+		.cancelbtn {
+		   width: 100%;
+		}
+	}
+
+
+
+	
+    
+}
+	</style>
+ 
+		<h1>
+			<div class = "Main_Page_Title">	
+				<img src="Main_Page_Title.png" alt="Page title image" style = "width:40%">	<!image for main page>
+			</div>
+		
+		
+		</h1>													<!Main Page title>
+
+		<div class = "topnav">									<!Links to other pages>
+			<a href = "/Coming_Soon.html">Info</a>
+			<a href = "/Coming_Soon.html">Game List</a>
+			<a href = "/Coming_Soon.html">Discord</a>
+			<a href = "/Coming_Soon.html">Careers</a>
+			<a href = "/Coming_Soon.html">IG Staff</a>
+			<a href = "/Coming_Soon.html">Store</a>
+			<a href = "/Coming_Soon.html">Contact Us</a>
+		</div>
+		
+</head>
+</div>
+<div class = "wrapper">
+<body>
+		<div class="row">
+			
+			<div class = "left" align="center">
+				<div class = "body">
+					<p>Site for a n00bs called Matt !</p>
+				</div>
+			</div>
+			<div class = "right" align="center" style="background-color:#f1f1f1">
+				<div class = "container">
+					<h2>Login</h2>
+						<form action="/action_page.php">
+						  <div class="imgcontainer">
+							<img src="img_avatar.png" alt="Avatar" class="avatar">
+						  </div>
+
+						  <div class="container">
+							<label for="uname"><b>Username</b></label>
+							<input type="text" placeholder="Enter Username" name="uname" required>
+
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+								
+							<button type="submit">Login</button>
+							<label>
+							  <input type="checkbox" checked="checked" name="remember"> Remember me
+							</label>
+						  </div>
+
+						  <div class="container" style="background-color:#f1f1f1">
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						  </div>
+						</form>
+					
+						<h2><br>Dont miss this exclusive sale!</h2>
+						<p>%50 off reopening of the whole store for WarRock!</p>
+				</div>
+			</div>
+		</div>
+</body>
+</div>
+	
+<footer> Created July 22nd 2018</footer>
+</html>
