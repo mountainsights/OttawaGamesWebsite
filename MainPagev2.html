@@ -4,30 +4,16 @@
 <div class = "wrapper">
 <head>
 <title>Main page</title> 	<!Display name on tab>
-<link rel= ”shortcut icon" href=”favicon.ico” mce_href=”favicon.ico”/>
+<link rel=”shortcut icon” href=”OttawaGames/favicon.ico” mce_href=”OttawaGames/favicon.ico”/>
 	<style>		
 	img 
 		{
-		background-color: rgb(0, 0, 0,0,);
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		box-shadow: 3px 3px 10px;
 		}
 	
 	*{font-family: "Times New Roman", Times, serif;	}
-	
-	.container
-		{
-		background-image: url(leaf.png);
-		background-position: top left;
-		background-repeat: no-repeat;
-		background-size: 40px 40px;
-		
-		
-		
-		
-		}
 	
 	
 	
@@ -37,8 +23,6 @@
 			overflow: hidden;
 			background-color: #333;
 			text-align: center;
-			border-radius: 5px;
-			box-shadow: 3px 3px 10px grey;
 		}
 
 	
@@ -114,18 +98,15 @@
 		}
 
 		.sidebar {
-			
+		background-color: #6C52D9;
 		  grid-row: 3 / 5;
 		  grid-column: 4 / 5;
-		  
 		}
 
 		.content-1 {
+		background-color: #6C52D9;
 		  grid-row: 3 / 4;
 		  grid-column: 2 / 4;
-		  background-color: grey;
-		  border-radius: 3px;
-		  
 		}
 
 		.Ad-1 {
@@ -139,7 +120,7 @@
 		  grid-row: 3 / 5;
 		  grid-column: 5 / 6;
 		}
-		
+
 		.Logo {
 		  grid-row: 1/2;
 		  grid-column: 2/5;
@@ -153,10 +134,9 @@
 		
 		.login
 		{
-			background-image: url(login.png);
+			background-color: white;
 			border: 10px solid black;
 			padding:10px;
-			border-radius: 3px;
 		}
 		
 		.promo
@@ -164,21 +144,8 @@
 			border: 10px solid grey;
 			padding: 10px;
 			text-align: center;
-			border-radius: 3px;
-
 			
 		}
-
-		.loggedIn
-		{
-			border: 3px solid grey;
-			padding:10px;
-			border-radius: 3px;
-			grid-row: 1 / 2;
-		  	grid-column: 4 / 6;
-		}
-		
-		
 
 
 
@@ -207,9 +174,7 @@
 		  </div>
 		  <div class="item links">
 				<div class = "topnav">									<!Links to other pages>
-					
-					<a href = "file:///C:/Users/Fuad/Documents/GitHub/OttawaGamesWebsite/MainPage.html">Home</a>
-					<a href = "file:///C:/Users/Fuad/Documents/GitHub/OttawaGamesWebsite/Info_page.html">Info</a>
+					<a href = "/Coming_Soon.html">Info</a>
 					<a href = "/Coming_Soon.html">Game List</a>
 					<a href = "/Coming_Soon.html">Discord</a>
 					<a href = "/Coming_Soon.html">Careers</a>
@@ -219,18 +184,16 @@
 				</div>
 		  </div>
 		  <div class="item sidebar">
-				<div id = loganpaul class = "login">
+				<div class = "login">
 						<form>
 								<h2>Login</h2>
-								<img src="login.png" alt="Page title image" style = "width:40%">
 								<b>Username:</b><br>
 								<input type = "text" placeholder="Enter Username" required>
 								<b>Password:</b><br>
 								<input type = "text" placeholder="Enter Password" required>
-								<button type="submit" onclick = "myFunction()">Login</button>
+								<button type="submit">Login</button>
 						</form>
 				</div>
-
 				<div class = "promo">
 						<h3>%50 off reopening of the whole store for WarRock!</h3>
 				</div>
@@ -241,9 +204,6 @@
 		  </div>
 		  <div class="item Ad-1">Advertisement 1</div>
 		  <div class="item Ad-2">Advertisment 2</div>
-		  <div id = "loggedIn" class = "loggedIn">
-		  		
-		  </div>
 		  
 		  <div class="item footer">footer</div>
 	</div>
@@ -252,8 +212,3 @@
 
 <footer> Created July 22nd 2018</footer>
 </html>
-
-
-<! To be removed later>
-<script src = "Js/script.js">
-</script>
